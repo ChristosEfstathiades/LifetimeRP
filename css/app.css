@@ -1,0 +1,242 @@
+
+:root {
+    --black: #181818;
+    --light-black: #6b6b6b;
+    --green: /*#219653 */#7DF59B;
+    --pink: #EB608A;
+    --faded-white: rgba(255,255,255,0.8)
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    line-height: 1.6;
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    color: var(--light-black);
+    background: #fff;
+    letter-spacing: 1px;
+}
+
+@font-face {
+    font-family: gta;
+    src: url(../pricedown/pricedown.ttf);
+    font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.3;
+    color: var(--black);
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: gta;
+    letter-spacing: normal;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    padding: 2rem 0;;
+}
+
+.container {
+    width:70%;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.green {
+    color: var(--green);
+}
+
+.pink {
+    color: var(--pink);
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    /* // background-color: #fff; */
+    padding: 1rem 0;
+    z-index: 1000;
+    /* // border-bottom: 1px solid #dae2e6; */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 6.5rem;
+    width: 6.5rem;
+}
+
+.nav__links {
+    display: flex;
+}
+
+.nav__item {
+    margin-left: 3.5rem;
+}
+
+.nav__link {
+    color: var(--faded-white);
+    transition: .3s;
+}
+
+.nav__item:hover .nav__link{
+    /* // text-decoration: underline; */
+    color: var(--green);
+}
+
+.home {
+    height: 100vh;
+    display: grid;
+    /* // grid-template-columns: 1fr 1fr; */
+    /* // align-items: center; */
+    background-image: url("/img/home_hero2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.home::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(17,17,17,0.6), rgba(17,17,17,1));
+    height: inherit;
+}
+
+.home__text {
+    margin: auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.home__desc {
+    color: var(--faded-white);
+}
+
+.discord-btn {
+    color: white;
+    background-color: #7289DA;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    margin-top: 2.5rem;
+}
+
+.fa-discord {
+    font-size: 1.8rem;
+    padding-left: .5rem;
+}
+
+/* // .home__image {
+//     width: 35rem;
+// }
+
+// .home__image--2 {
+//     position: relative;
+//     margin-top: -5rem;
+//     margin-left: 5rem;
+// } */
+
+/* .rules {
+    // background-color: #d3d3d3;
+} */
+
+.rules__header {
+    text-align: center;
+}
+
+.rules__section {
+    margin-top: 5rem;
+    background: #f5f5f5;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.rules__title {
+    margin-bottom: 1.5rem;
+    border-bottom: rgba(17,17,17,0.1) 1px solid;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+.rules__rule::before {
+    content: "•";
+    color: var(--pink);
+    padding-right: .8rem;
+}
+
+.rules__rule {
+    margin-bottom: 1rem;
+}
+
+/* STORE */
+.store__banner {
+    height: 40vh;
+    display: grid;
+    place-items: center;
+    background-image: url("/img/home_hero1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* // background-attachment: fixed; */
+    position: relative;
+}
+
+.store__banner::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(17,17,17,0.35), rgba(17,17,17,1));
+    height: inherit;
+}
+
+.store__banner > * {
+    position: relative;
+    z-index: 2;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}

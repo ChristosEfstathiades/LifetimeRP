@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lifetime Roleplay</title>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- Fonts -->
+    <!-- {{-- <link rel="dns-prefetch" href="//fonts.gstatic.com"> --}} -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/94111b7a16.js" crossorigin="anonymous"></script>
+
+    <!-- Styles -->
+    <link href="./css/app.css" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <nav class="navbar">
+            <div class="container">
+                <img src="./img/ltrp.png" alt="" class="logo">
+                <ul class="nav__links">
+                    <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#rules" class="nav__link scroll">Rules</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Store</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <main class="home">
+                <div class="home__text">
+                    <h1 class="home__title"><span class="pink">Lifetime</span> <span class="green">Roleplay</span></h1>
+                    <!-- {{-- <p class="home__desc">The Ultimate GTA RP Server</p> --}} -->
+                    <a href="https://discord.gg/awwyAhb" class="btn discord-btn">Check Out The Discord <i class="fab fa-discord"></i></a>
+                </div>
+            </main>
+        
+            <section class="rules" id="rules">
+                <div class="container">
+                    <h1 class="rules__header"><span class="pink">Rules</span></h1>
+                    <div class="rules__section">
+                        <h3 class="rules__title">General Rules</h3>
+                        <ul class="rules__list">
+                            <li class="rules__rule">No cheating or exploiting - Use of bugs, menu or scripts or anything to gain advantage is not allowed.</li>
+                            <li class="rules__rule">No arguing or impersonating or excessively pestering staff.</li>
+                            <li class="rules__rule">You must finish any RP you are involved with no matter what.</li>
+                            <li class="rules__rule">Act civil and don't act disrespectful</li>
+                            <li class="rules__rule">No Meta gamming, No Power gamming, No Revenge Killing, No Combat Logging</li>
+                            <li class="rules__rule">No killing without cause, reason or rp</li>
+                            <li class="rules__rule">No Meta gamming, No Power gamming, No Revenge Killing</li>
+                            <li class="rules__rule">No breaking character</li>
+                            <li class="rules__rule">No erotic Role-play at all</li>
+                            <li class="rules__rule">Whitelisted employees must be within the LTRP discord whilst on duty, this could be a general channel or your own job channel</li>
+                            <li class="rules__rule">No idle farming or afk farming, you MUST log off if you're going AFK for an extended period of time, if you're found to be farming a pay check your money may be set to $0.00.</li>
+                        </ul>
+                    </div>
+                    <div class="rules__section">
+                        <h3 class="rules__title">Character Rules</h3>
+                        <ul class="rules__list">
+                            <li class="rules__rule">Logic - You must always thing logically when you're in a situation, this is a role-play</li>
+                            <li class="rules__rule">You must value your life - Not valuing your life may get you kicked and or told that you must delete your character</li>
+                            <li class="rules__rule">You can not kill someone after you rob them</li>
+                            <li class="rules__rule">Terrorist RP is not allowed</li>
+                            <li class="rules__rule">Sniper RP is allowed, HOWEVER, you MUST declare that there is a sniper, whether this is by voice or via twitter, you may not start randomly shooting with no real RP behind it</li>
+                            <li class="rules__rule">Suicide - If you wish to RP as suicidal should you actual commit suicide or say you are dead you will be required to delete your character. This is also known as "/me no pulse"</li>
+                        </ul>
+                    </div>
+                    <div class="rules__section">
+                        <h3 class="rules__title">Other</h3>
+                        <ul class="rules__list">
+                            <li class="rules__rule">When robbing an officer/EMS, You can only take the items that they currently have on them</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+        </footer>
+    </div>
+
+    <script>
+        var scrollLink = $(".scroll");
+//smooth scrolling
+        scrollLink.click(function(event) {
+        event.preventDefault();
+        $("body,html").animate({
+            scrollTop: $(this.hash).offset().top
+        }, 700)
+        })
+    </script>
+</body>
+</html>
