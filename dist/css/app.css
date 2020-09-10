@@ -33,12 +33,13 @@ body {
 }
 
 h1,
+h2,
 h3 {
     line-height: 1.3;
     color: var(--black);
 }
 
-h1 {
+h1, h2 {
     font-size: 5rem;
     font-family: gta;
     letter-spacing: normal;
@@ -169,6 +170,7 @@ section {
 
 .rules__header {
     text-align: center;
+    font-size: 4.5rem;
 }
 
 .rules__section {
