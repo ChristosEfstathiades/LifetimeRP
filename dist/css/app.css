@@ -118,7 +118,7 @@ section {
     background-image: url("../img/homepage-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 50% 50%;
     background-attachment: fixed;
     position: relative;
 }
@@ -203,5 +203,9 @@ section {
 @media screen and (max-width: 768px) {
     .container {
         width: 80%;
+    }
+
+    .home {
+        background-attachment: scroll;
     }
 }
